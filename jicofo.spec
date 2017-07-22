@@ -1,5 +1,4 @@
 %define author Christopher Miersma
-## Tito args --builder=mead --arg "maven_property=assembly.skipAssembly=false"
 
 %define debug_package %{nil}
 
