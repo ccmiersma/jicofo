@@ -1,0 +1,12 @@
+[Unit]
+Description=Jicofo
+Requires=network.target prosody.service
+
+[Service]
+Type=forking
+EnvironmentFile=/etc/opt/local/jicofo/env.conf
+ExecStart=/opt/local/bin/jicofo-service.sh
+
+
+[Install]
+WantedBy=multi-user.target
